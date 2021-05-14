@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orginal-Trombones</title>
+
+    <!-- CSS-Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap-Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Bootstrap Font awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Build a Product Landing Page
+Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
+
+Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+
+You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+
+User Story #1: My product landing page should have a header element with a corresponding id="header".
+
+User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+
+User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+
+User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+
+User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+
+User Story #6: I can watch an embedded product video with id="video".
+
+User Story #7: My landing page has a form element with a corresponding id="form".
+
+User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+
+User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+
+User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+
+User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+
+User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once.
+
+You can build your project by using this CodePen template and clicking Save to create your own pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+
+Once you're done, submit the URL to your working project with all its tests passing. -->
+</head>
+
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light" id="nav-bar">
+            <div class="container-fluid">
+
+                <!-- Brand-Logo -->
+                <a class="navbar-brand" href="#"><img id="header-img"
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                        alt="Orginal-Trombones" width="300px" height="auto"></a>
+
+                <!-- Toogle-btn -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar-navs -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav left">
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#howitswork">How It Works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Pricing">Pricing</a> </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <section class="content-section">
+        <div class="container">
+            <div class="wrapper text-center">
+                <!-- Form Start -->
+                <h2>Handcrafted, home-made masterpieces</h2>
+                <form action="https://www.freecodecamp.org/email-submit" method="POST">
+                    <div class="form-group">
+                        <div class="group">
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Enter your email address">
+                            <button type="submit" id="submit" class="btn btn-warning">GET STARTED</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </section>
+    <!-- Form End -->
+    <section id="features">
+        <div class="container">
+            <div class="grids">
+                <div class="icon">
+                    <i class="fa fa-3x fa-fire"></i>
+                </div>
+                <div class="description">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
+                        of your purchase.</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="grids">
+                <div class="icon">
+                    <i class="fa fa-3x fa-truck"></i>
+                </div>
+                <div class="description">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
+                        free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="grids">
+                <div class="icon">
+                    <i class="fa fa-3x fa-battery-full"></i>
+                </div>
+                <div class="description">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="howitswork" class="text-center mt-5">
+        <div class="container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="Pricing">
+        <div class="container cards ">
+            <!-- Card-1 -->
+            <div class="card my-5 text-center card border-dark" style="width: 20rem;">
+                <div class="card-head">
+                    <h4 class="card-title">TENOR TROMBONE</h4 class="card-title">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title">&#36;600</h4 class="card-title">
+                    <p class="card-text">
+                        Lorem ipsum. <br>
+                        Lorem ipsum dolor. <br>
+                        Lorem ipsum. <br>
+                    </p>
+                    <a href="#" class="btn btn-warning">SELECT</a>
+                </div>
+            </div>
+            <!-- Card-2 -->
+            <div class="card my-5 text-center card border-dark" style="width: 20rem;">
+                <div class="card-head">
+                    <h4 class="card-title">TENOR TROMBONE</h4 class="card-title">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title">&#36;900</h4 class="card-title">
+                    <p class="card-text">
+                        Lorem ipsum. <br>
+                        Lorem ipsum dolor. <br>
+                        Lorem ipsum. <br>
+                    </p>
+                    <a href="#" class="btn btn-warning">SELECT</a>
+                </div>
+            </div>
+            <!-- Card-3 -->
+            <div class="card my-5 text-center card border-dark" style="width: 20rem;">
+                <div class="card-head">
+                    <h4 class="card-title">TENOR TROMBONE</h4 class="card-title">
+                </div>
+                <div class="card-body ">
+                    <h4 class="card-title">&#36;1200</h4 class="card-title">
+                    <p class="card-text">
+                        Plays similar to a Trumpet <br>
+                        Great for Jazz Bands <br>
+                        Lorem ipsum dolor. <br>
+                        Lorem ipsum. <br>
+
+                    </p>
+                    <a href="#" class="btn btn-warning">SELECT</a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer container">
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a> </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="text-muted">Copyright 2016, Original Trombones</p>
+        </footer>
+    </section>
+
+
+    <!-- javaScrpit -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
